@@ -1,122 +1,232 @@
 <!DOCTYPE html>
-<html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-	<!-- Google Font -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    body {
+      display: grid;
+      place-items: center;
+    }
 
-	<!-------->
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
 
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-		}
+    }
 
+    .social {
+      background-color: #eae9e9;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
 
-		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
-			padding: 8px;
-			text-align: center;
-			margin: 7px auto;
-			width: fit-content;
-		}
+    .icon {
+      font-size: 1.2em;
+    }
 
-		.navMenu a {
-			color: #272727;
-			text-decoration: none;
-			text-transform: uppercase;
-			display: inline-block;
-			padding: 6px;
-		}
+    .blog:hover {
+      background-color: #ffbd2f;
+    }
 
-		.background {
-			background-color: #ece5f0;
-		}
+    .email:hover {
+      background-color: #23c8c8;
+    }
 
-		.border {
-			border: 1px solid #cccccc;
+    .facebook:hover {
+      background-color: #4267B2;
+    }
 
-		}
+    .instagram:hover {
+      background: rgb(241, 102, 217);
+      background: radial-gradient(circle, rgba(241, 102, 217, 1) 10%, rgba(252, 176, 69, 1) 76%, rgba(253, 29, 29, 1) 100%);
+    }
 
-		.navMenu a:hover {
+    .linkedin:hover {
+      background-color: #0e76a8;
+    }
 
-			color: #d09c0b;
-		}
-	</style>
+    .twitter:hover {
+      background-color: #26a7de;
+    }
+
+    .reddit:hover {
+      background-color: #ff4500;
+    }
+
+    .tiktok:hover {
+      background-color: #ff0050;
+    }
+
+    .youtube:hover {
+      background-color: #FF0000;
+    }
+
+    .pinterest:hover {
+      background-color: #c8232c;
+    }
+
+    .telegram:hover {
+      background-color: #2AABEE;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .social:hover {
+      color: #fff;
+    }
+  </style>
+
 </head>
 
 <body>
 
-	<nav class="navMenu  border">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
-		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
-		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
-		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
-		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
-		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
-		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
-		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
-		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
-		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start blog Icon -->
+      <div id="blog" onclick="navigate(this.id)" class="social blog">
+        <span class="icon"><i class="fa-solid fa-blog"></i></span>
+      </div>
+      <!-- End blog Icon -->
+
+      <!-- Start email Icon -->
+      <div id="email" onclick="navigate(this.id)" class="social email">
+        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+      <!-- End email Icon -->
+
+      <!-- Start facebook Icon -->
+      <div id="facebook" onclick="navigate(this.id)" class="social facebook">
+        <span class="icon"><i class="fab fa-facebook"></i></span>
+      </div>
+      <!-- End facebook Icon -->
+
+
+      <!-- Start instagram Icon -->
+      <div id="instagram" onclick="navigate(this.id)" class="social instagram">
+        <span class="icon"><i class="fab fa-instagram"></i></span>
+      </div>
+      <!-- End instagram Icon -->
+
+      <!-- Start linkedin Icon -->
+      <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
+        <span class="icon"><i class="fab fa-linkedin"></i></span>
+      </div>
+      <!-- End linkedin Icon -->
+
+      <!-- Start twitter Icon -->
+      <div id="twitter" onclick="navigate(this.id)" class="social twitter">
+        <span class="icon"><i class="fab fa-twitter"></i></span>
+      </div>
+      <!-- End twitter Icon -->
+
+
+      <!-- Start reddit Icon -->
+      <div id="reddit" onclick="navigate(this.id)" class="social reddit">
+        <span class="icon"><i class="fab fa-reddit"></i></span>
+      </div>
+      <!-- End reddit Icon -->
+
+
+      <!-- Start tiktok Icon -->
+      <div id="tiktok" onclick="navigate(this.id)" class="social tiktok">
+        <span class="icon"><i class="fab fa-tiktok"></i></span>
+      </div>
+      <!-- End tiktok Icon -->
+
+      <!-- Start youtube Icon -->
+      <div id="youtube" onclick="navigate(this.id)" class="social youtube">
+        <span class="icon"><i class="fab fa-youtube"></i></span>
+      </div>
+      <!-- End youtube Icon -->
+
+      <!-- Start pinterest Icon -->
+      <div id="pinterest" onclick="navigate(this.id)" class="social pinterest">
+        <span class="icon"><i class="fab fa-pinterest"></i></span>
+      </div>
+      <!-- End pinterest Icon -->
+
+      <!-- Start telegram Icon -->
+      <div id="telegram" onclick="navigate(this.id)" class="social telegram">
+        <span class="icon telegram"><i class="fab fa-telegram"></i></span>
+      </div>
+      <!-- End telegram Icon -->
+
+    </div>
 
 
 
-	</nav>
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "blog")
+          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
+
+        else if (id === "email") {
+          window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
+        }
+
+        else if (id === "facebook") {
+          window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
+        }
+        else if (id === "instagram") {
+          window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
+        }
+        else if (id === "linkedin") {
+          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "twitter") {
+          window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "reddit") {
+          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
+        }
+        else if (id === "tiktok") {
+          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
+        }
+        else if (id === "youtube") {
+          window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
+        }
+        else if (id === "pinterest") {
+          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "telegram") {
+          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+      }
+
+    </script>
 
 
-	<script>
 
-		let direction = "horizontal";
-		if (direction === "vertical") {
-			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
-		}
-
-
-		function navigate(id) {
-
-			if (id == 'home')
-				window.open("https://www.notion.so/dewanhafiznabil/Dewan-Hafiz-Nabil-7fa50bcefad34a29af1feae083c179f6", '_parent').focus();
-			else if (id == "inbox")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "week")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "month")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "projects")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "business")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "tasks")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "knowledge")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "topics")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "notes")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "media")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "resourses")
-				window.open("https://example.com3", '_blank').focus();
-			else if (id == "lifewiki")
-				window.open("https://example.com", '_blank').focus();
-
-		}
-	</script>
-
-
-</body>
+  </body>
 
 </html>
